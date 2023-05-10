@@ -1,4 +1,4 @@
-let tabbox = document.querySelector(".tabbox");
+ tabbox = document.querySelector(".tabbox");
 let arrowicons = document.querySelectorAll(".icon i");
 let tab =  document.querySelectorAll(".tab");
 console.log(tab);
