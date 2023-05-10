@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #695fe6;
+}
+
+.container{
+position: absolute;
+max-width: 1000px;
+   
+    background-color: #fff;
+    width: 450px;
+    height: 50px;
+    border-radius: 4px;
+    overflow-x: hidden;
+
+}
+.container .tabbox{
+    position: relative;
+    top: 10px;
+    display: flex;
+   overflow-x: hidden;
+  
+align-items: center;
+    gap: 10px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+  
+}
+
+
+
+.container .tabbox .tab{
+    position: relative;
+    
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    background-color: #edeef1;
+    padding: 3px 15px;
+    border-radius: 20px;
+    border: 1px solid #edeef1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+
+.container .tabbox .active{
+    position: relative;
+    background-color: #4070f4;
+}
+.container::before{
+position: absolute;
+content: '';
+width: 40px;
+background-color: #fff;
+height: 100%;
+z-index: 100;
+}
+
+.container::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+content: '';
+width: 40px;
+background-color: #fff;
+height: 100%;
+z-index: 100;
+}
+
+.container .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .icon:first-child{
+position: absolute;
+top: 15px;
+left: 5px;
+z-index: 1000;
+background-color: #edeef1;
+width: 20px;height: 20px;
+border-radius: 50%;
+cursor: pointer;
+
+
+}
+
+.container .icon:last-child{
+    position: absolute;
+    right: 5px;
+    bottom: 13px;
+    
+    
+z-index: 1000;
+background-color: #edeef1;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+cursor: pointer;
+}
